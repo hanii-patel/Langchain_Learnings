@@ -12,9 +12,12 @@ This folder contains my learnings around integrating and utilizing different LLM
 ### 📁 `Langchain_prompts`
 This folder is dedicated to mastering how we interact with LLMs using prompts, structured outputs, and user interfaces.
 
-Prompt Engineering: Working with prompt templates and loading configurations (template.json, prompt_ui.py).
-Conversational Bots: Building chat loops and managing conversation history with System, Human, and AI messages (chatbot.py, messages.py).
-Structured Outputs: Forcing the LLM to return strictly formatted data using Python's TypedDict, Pydantic models, and JSON schemas (typeddict_demo.py, with_structured_output_typeddict.py, pydantic_demo.py, with_structured_output_pydantic.py, with_structured_output_json.py, json_schema.json).
+- **Prompt Engineering:** Working with prompt templates and loading configurations dynamically (`template.json`, `prompt_ui.py`).
+- **Conversational Bots:** Building interactive chat loops and robustly managing conversation histories using `SystemMessage`, `HumanMessage`, and `AIMessage` (`chatbot.py`, `messages.py`).
+- **Structured Outputs:** Techniques for forcing the LLM to return strictly formatted, parseable data to prevent hallucinations and errors:
+  - **TypedDict:** Using native Python dictionary types for lightweight schema definition (`typeddict_demo.py`, `with_structured_output_typeddict.py`).
+  - **Pydantic Models:** Leveraging Pydantic classes for powerful type-hinting, nested structures, and robust data validation (`pydantic_demo.py`, `with_structured_output_pydantic.py`).
+  - **JSON Schemas:** Supplying raw JSON schemas directly to the model for language-agnostic data extraction (`json_schema.json`, `with_structured_output_json.py`).
 
 ---
 *Continuously learning and adding more as I explore the world of AI engineering!*
