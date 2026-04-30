@@ -19,5 +19,12 @@ This folder is dedicated to mastering how we interact with LLMs using prompts, s
   - **Pydantic Models:** Leveraging Pydantic classes for powerful type-hinting, nested structures, and robust data validation (`pydantic_demo.py`, `with_structured_output_pydantic.py`).
   - **JSON Schemas:** Supplying raw JSON schemas directly to the model for language-agnostic data extraction (`json_schema.json`, `with_structured_output_json.py`).
 
+### 📁 `Langchain_Output_Parsers`
+This folder covers various methods to parse raw text outputs from the LLM into structured data formats.
+- **String Parsers:** Extracting clean text using `StrOutputParser` (`stroutputparser.py`, `stroutputparser1.py`).
+- **JSON Parsers:** Converting responses into JSON format using `JsonOutputParser` (`jsonoutputparser.py`).
+- **Structured Output Parsers:** Defining explicit schemas with `ResponseSchema` and extracting strictly formatted data using `StructuredOutputParser` (`structuredoutputparser.py`).
+- **Pydantic Parsers:** Using Pydantic models to automatically extract, validate, and type-hint outputs (`pydanticoutputparser.py`).
+
 ---
 *Continuously learning and adding more as I explore the world of AI engineering!*
