@@ -26,5 +26,12 @@ This folder covers various methods to parse raw text outputs from the LLM into s
 - **Structured Output Parsers:** Defining explicit schemas with `ResponseSchema` and extracting strictly formatted data using `StructuredOutputParser` (`structuredoutputparser.py`).
 - **Pydantic Parsers:** Using Pydantic models to automatically extract, validate, and type-hint outputs (`pydanticoutputparser.py`).
 
+### 📁 `Langchain_Chains`
+This folder explores LangChain Expression Language (LCEL) and how to compose multiple components together to build complex workflows.
+- **Simple Chains:** Creating a basic end-to-end chain using the `|` pipe syntax (`simple_chain.py`).
+- **Sequential Chains:** Linking multiple chains together where the output of one step feeds directly into the next (`sequential_chain.py`).
+- **Parallel Chains:** Executing tasks concurrently using `RunnableParallel` and merging their outputs downstream (`parallel_chain.py`).
+- **Conditional Chains (Routing):** Using `RunnableBranch` and custom `RunnableLambda` functions to dynamically route execution based on intermediate outputs like sentiment analysis (`conditional_chain.py`).
+
 ---
 *Continuously learning and adding more as I explore the world of AI engineering!*
