@@ -33,5 +33,13 @@ This folder explores LangChain Expression Language (LCEL) and how to compose mul
 - **Parallel Chains:** Executing tasks concurrently using `RunnableParallel` and merging their outputs downstream (`parallel_chain.py`).
 - **Conditional Chains (Routing):** Using `RunnableBranch` and custom `RunnableLambda` functions to dynamically route execution based on intermediate outputs like sentiment analysis (`conditional_chain.py`).
 
+### 📁 `Langchain_Runnables`
+This folder dives deeper into LangChain's core `Runnable` interface, allowing for highly customizable, declarative pipelines.
+- **RunnableSequence:** Combining steps explicitly without using the pipe (`|`) operator (`runnable_sequence.py`).
+- **RunnableParallel:** Running multiple distinct processes concurrently and combining their outputs into a single dictionary (`runnable_parallel.py`).
+- **RunnablePassthrough:** Passing inputs unchanged to later stages while still evaluating side branches (`runnable_passthrough.py`).
+- **RunnableLambda:** Converting custom Python functions into executable components within a chain (`runnable_lambda.py`).
+- **RunnableBranch:** Dynamically routing data through different paths based on conditions or output sizes (`runnable_branch.py`).
+
 ---
 *Continuously learning and adding more as I explore the world of AI engineering!*
