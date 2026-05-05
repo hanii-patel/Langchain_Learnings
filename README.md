@@ -41,5 +41,13 @@ This folder dives deeper into LangChain's core `Runnable` interface, allowing fo
 - **RunnableLambda:** Converting custom Python functions into executable components within a chain (`runnable_lambda.py`).
 - **RunnableBranch:** Dynamically routing data through different paths based on conditions or output sizes (`runnable_branch.py`).
 
+### 📁 `Langchain_Document_Loader`
+This folder covers how to ingest different types of data sources and convert them into LangChain `Document` objects for downstream processing.
+- **Text Loader:** Loading basic `.txt` files and passing the content into a summarization chain (`text_loader.py`).
+- **CSV Loader:** Ingesting structured data row-by-row from `.csv` files (`CSV_loader.py`).
+- **PDF Loader:** Reading and parsing `.pdf` files using `PyPDFLoader` (`pdf_loader.py`).
+- **Directory Loader:** Bulk loading multiple documents (e.g., all PDFs in a folder) using `DirectoryLoader` (`directory_loader.py`).
+- **WebBase Loader:** Scraping and extracting clean text from web pages using BeautifulSoup (`webBase_loader.py`).
+
 ---
 *Continuously learning and adding more as I explore the world of AI engineering!*
