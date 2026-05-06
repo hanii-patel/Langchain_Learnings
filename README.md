@@ -49,5 +49,13 @@ This folder covers how to ingest different types of data sources and convert the
 - **Directory Loader:** Bulk loading multiple documents (e.g., all PDFs in a folder) using `DirectoryLoader` (`directory_loader.py`).
 - **WebBase Loader:** Scraping and extracting clean text from web pages using BeautifulSoup (`webBase_loader.py`).
 
+### 📁 `Langchain_Text_Splitters`
+This folder demonstrates different techniques for splitting large text documents into smaller chunks for LLMs to process effectively.
+- **Length-Based Splitting:** Breaking text into chunks purely based on character count (`length_based.py`).
+- **Text Structure-Based Splitting:** Using `RecursiveCharacterTextSplitter` to intelligently split text based on paragraphs, sentences, and words (`text_structure_based.py`).
+- **Python Code Splitting:** Splitting Python source code while respecting its syntax and logical blocks (`python_code_splitting.py`).
+- **Markdown Splitting:** Splitting Markdown files while respecting headers, code blocks, and markdown syntax (`markdown_splitting.py`).
+- **Semantic Meaning-Based Splitting:** Using `SemanticChunker` and embeddings to group text by contextual meaning rather than arbitrary length (`semantic_meaning_based.py`).
+
 ---
 *Continuously learning and adding more as I explore the world of AI engineering!*
